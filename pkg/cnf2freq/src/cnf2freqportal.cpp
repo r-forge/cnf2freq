@@ -7,7 +7,6 @@
 #include <cmath>
 
 #include <map>
-#include <array>
 #include <vector>
 #include <algorithm>
 

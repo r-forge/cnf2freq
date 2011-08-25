@@ -1,6 +1,6 @@
 #define STRICT_R_HEADERS
 
-#include <boost/lexical_cast.hpp>
+// #include <boost/lexical_cast.hpp>
 #include <R.h>
 #include <Rdefines.h>
 #include <Rcpp.h>

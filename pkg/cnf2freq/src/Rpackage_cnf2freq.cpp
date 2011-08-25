@@ -44,11 +44,6 @@ float templgeno[8] = {-1, -0.5,
 
 #include "cnf2freqmini.h"
 #include <boost/static_assert.hpp>
-#include <boost/random/linear_congruential.hpp>
-#include <boost/random/mersenne_twister.hpp>
-#include <boost/random/uniform_int.hpp>
-#include <boost/random/variate_generator.hpp>
-#include <boost/random/normal_distribution.hpp>
 #include <boost/tuple/tuple.hpp>
 #include <boost/tuple/tuple_comparison.hpp>
 

@@ -3,3 +3,4 @@ PKG_LIBS = $(shell $(R_HOME)/bin/R --slave -e "Rcpp:::LdFlags()" )
 ## Uncomment this if you want to use C++0x features -- which are not currently portable
 ## CLINK_CPPFLAGS=$(shell $(R_HOME)/bin/R --slave -e "Rcpp:::Cxx0xFlags()" )
 # PKG_CPPFLAGS=-std=c++0x
+PKG_CPPFLAGS=-I.

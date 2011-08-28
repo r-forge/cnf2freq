@@ -1,9 +1,12 @@
 #define STRICT_R_HEADERS
 
 // #include <boost/lexical_cast.hpp>
+#include <Rcpp.h>
+extern "C"
+{
 #include <R.h>
 #include <Rdefines.h>
-#include <Rcpp.h>
+}
 #include <cmath>
 
 #include <map>

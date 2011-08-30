@@ -152,7 +152,7 @@ struct cnf2doercontext
 			int id;
 			if (sscanf(ids[i], "%d", &id) != 1)
 			{
-				Rf_error("Non-integer individual ID in geno matrix.");
+			  //				Rf_error("Non-integer individual ID in geno matrix.");
 			}
 
 			miniindividual* ind = indmap.getind(id);
@@ -189,7 +189,7 @@ struct cnf2doercontext
 			int id;
 			if (sscanf((char*) names[i], "%d", &id) != 1)
 			{
-				Rf_error("Non-integer individual ID in geno matrix.");
+			  //				Rf_error("Non-integer individual ID in geno matrix.");
 			}
 
 			miniindividual* ind = indmap.getind(id);
@@ -448,22 +448,4 @@ SEXP cnf2doer(SEXP args)
 	x.normalizecleanup();
 
 	return outputvector;
-
-	/*
-  SEXP dataobject;  
-  protector pfirst(dataobject = CADR(args));
-  protector geno = install("geno");
-  protector sexchrom = install("sex.chrom");
-  protector heterogam = install("heterogam");
-
-  if (!isVectorList(dataobject))
-  {
-	  Rf_error("Only named vector lists supported for cnF2freq data objects.");
-  }
-
-
-
-  return GET_NAMES(pfirst);*/
-
-  //return geno;
 }

@@ -1,0 +1,12 @@
+Package: cnf2freq_ibdtracer
+Version: 0.1
+Date: 2010-09-28
+Author: Carl Nettelblad <carl.nettelblad@it.uu.se>
+Maintainer: Carl Nettelblad <carl.nettelblad@it.uu.se>
+Depends: R (>= 2.10)
+LinkingTo: Rcpp
+Description: cnF2freq interface, giving allele transmission probabilities
+Title: same Chromosome N-loci F2 frequencies, with IBD tracing
+License: LGPL (>= 2)
+URL: http://www.it.uu.se/research/project/ctrait
+

@@ -23,7 +23,7 @@ extern "C"
 	SEXP cnf2doer(SEXP args);
 }
 
-const double ministep = 1E-1;
+const double ministep = 1E-5;
 
 struct indmapper
 {

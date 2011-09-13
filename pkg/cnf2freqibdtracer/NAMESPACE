@@ -1,1 +1,1 @@
-useDynLib(cnf2freq)
+useDynLib(cnf2freqibdtracer)

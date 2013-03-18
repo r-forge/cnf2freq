@@ -767,7 +767,7 @@ struct individ : miniindividual
 				// for genotyping error in every single marker. A small epsilon should otherwise be introduced whenever
 				// any probs[i] is zero.
 				markerdata[marker] = make_pair(UnknownMarkerVal, UnknownMarkerVal);
-				fprintf(stderr, "Error in %x, marker %d, impossible path\n", this, marker);
+				//				fprintf(stderr, "Error in %x, marker %d, impossible path\n", this, marker);
 				sum = 1;
 			}
 			else
@@ -1242,7 +1242,7 @@ void postmarkerdata()
 
 				if (ind->markervals[g].size() >= 3)
 				{
-					fprintf(stderr, "Error, too many matches: %d\t%d\n", i, g);
+				  //					fprintf(stderr, "Error, too many matches: %d\t%d\n", i, g);
 				}
 				if (!latephase && ind->markervals[g].size() == 2)
 				{
@@ -1274,7 +1274,7 @@ void postmarkerdata()
 				ind->markervals[g].clear();
 			}
 		}
-		fprintf(stderr, "Number of corrected genotypes: %d\n", any);
+		//		fprintf(stderr, "Number of corrected genotypes: %d\n", any);
 		if (latephase)
 		{
 			latephase = false;
@@ -1347,7 +1347,7 @@ template<bool full> void doit(resultreceiver& receiver
 		}
 		else
 		{
-			fprintf(stderr, "ZERO RESULTS %d\n", j);
+		  //			fprintf(stderr, "ZERO RESULTS %d\n", j);
 			dous.erase(dous.begin() + j);
 		}
 	}
